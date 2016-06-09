@@ -1,0 +1,15 @@
+/**
+ * Добавляйте свои кастомные стили сюда
+ *
+ * Здесь размещают стили для изменений не вошедвших в основной макет
+ */
+a.contacts__email:hover{
+	text-decoration: none;
+}
+.gallery__wrapper ul li:before{
+	display: none
+}
+       
+input[name=name]{
+  display:none;
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="">
+    <meta id="viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <link rel="stylesheet" href="vendor/jquery.simpleselect.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/after.css">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.min.js"><\/script>')</script><![endif]-->
+</head>
+<body class="typography">
+    <div class="layout-wrapper">
+        <!--[if lt IE 8]><p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для лучшей навигации по интернету.</p><![endif]-->
+        <header class="layout-header">
+            <div class="header" id="header">
+                <div class="header__wrapper">
+                    <a href="#" class="header__navigation"></a>
+                    <a href="/build/index.html"><img src="img/logo.png" alt="" class="header__logo"> <img src="img/logo.mini.png" alt="" class="header__logo--mini"></a>
+                    <a href="#" class="header__phone" id="callback_btn"></a>
+                </div>
+            </div>
+            <div class="nav" id="nav">
+                <div class="nav__list">
+                    <a href="#" class="nav__link">О жилом комплексе «Флагман»</a>
+                    <a href="#" class="nav__link">Расположение и инфраструктура</a>
+                    <a href="/build/flats-choose.html" class="nav__link">Выбор квартиры по параметрам</a>
+                    <a href="/build/gallery.html" class="nav__link">Фотогалерея</a>
+                    <a href="#" class="nav__link">О застройщике</a>
+                    <a href="/build/contacts.html" class="nav__link">Контакты</a>
+                </div>
+            </div>
+            <div class="nav__overlay"></div>
+        </header>
+        <main class="layout-main">
+            <div class="contacts">
+                <h1 class="contacts__title">Контакты</h1>
+                <div class="contacts__address-label">Наш офис продаж располагается по адресу:</div>
+                <div class="contacts__address">г. Владимир, ул. Мира, д.15 В, 5 этаж</div>
+                <div class="contacts__address-label">Телефоны офиса продаж:</div>
+                <div class="contacts__address contacts__address--phone"><span>+7 (495)</span> 135-45-31</div>
+                <div class="contacts__address-label">Так же вы можете связаться с нами, написав на электронную почту:</div>
+                <div class="contacts__address"><a href="mailto:konsplus@konsplus.elcom.ru">konsplus@konsplus.elcom.ru</a></div>
+                <div class="contacts__map" id="map"></div>
+            </div>
+            <div class="flat__popup-callback popup-callback popup-general">
+                <div class="popup-callback__overlay popup-overlay-general"></div>
+                <div class="flat__popup-callback popup-callback__container popup-container-general" id="popup_callback">
+                    <div class="popup-callback__heading">Заявка на обратный звонок
+                        <a href="#" class="popup-callback__close"></a>
+                    </div>
+                    <div class="popup-callback__body">
+                        <form class="popup-callback__form" id="form_callback">
+                            <div class="popup-callback__cols">
+                                <div class="popup-callback__col">
+                                    <label class="popup-callback__label" for="surname">Имя<span class="required">*</span></label>
+                                    <input class="popup-callback__input" name="surname" required>
+                                    <label class="popup-callback__label" for="phone">Телефон<span class="required">*</span></label>
+                                    <input required class="popup-callback__input" placeholder="+7 (___) ___-__-__" name="phone" id="callback_phone">
+                                </div>
+                                <div class="popup-callback__col">
+                                    <label class="popup-callback__label" for="email">E-mail<span class="required">*</span></label>
+                                    <input class="popup-callback__input" name="email" required class="email">
+                                    <label class="popup-callback__label" for="message">Сообщение</label>
+                                    <textarea class="popup-callback__input popup-callback__input--textarea" name="message"></textarea>
+                                </div>
+                            </div>
+                            <p class="popup-callback__hint"><span class="star">*</span>поля, обязательны для&nbsp;заполнения</p>
+                            <input type="submit" class="popup-callback__button" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="layout-footer">
+            <div class="footer" id="footer">
+                <div class="footer__upper">
+                    <div class="footer__logo-wrapper">
+                        <img src="img/logo.png" class="footer__logo">
+                    </div>
+                    <div class="footer__phone-text"><span>+7 (4922)</span> 77-99-89</div>
+                    <a class="footer__email" href="mailto:konsplus@konsplus.elcom.ru">konsplus@konsplus.elcom.ru</a>
+                </div>
+                <div class="footer__copyrights">
+                    <div class="footer__copyright">&copy; 2016 ЖК «Флагман»</div>
+                    <div class="footer__developer">Создание сайта — <a href="http://bilingo.ru">Bilingo.ru</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="white_overlay"></div>
+    <div class="fady" id="fady"></div>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.plugin.min.js"></script>
+    <script src="vendor/jquery.countdown.js"></script>
+    <script src="vendor/jquery.countdown.ru.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="vendor/hammer.min.js"></script>
+    <script src="vendor/jquery.simpleselect.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    window.setViewportRatio = function()
+    {
+        var ww;
+        var landscape = window.innerHeight <= window.innerWidth;
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent))
+        {
+            ww = landscape ? window.screen.height : window.screen.width;
+        }
+        else
+        {
+            ww = window.screen.width;
+        }
+        var mw = (ww >= 768) ? 768 : 480; // min width of site
+        var ratio = ww / mw;
+        $('#viewport').attr('content',
+            'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww
+        );
+    }
+    $(function()
+    {
+        setViewportRatio();
+        RATIO_SET = 1;
+        window.addEventListener("orientationchange", setViewportRatio, false);
+    });
+    </script>
+</body>
+</html>
