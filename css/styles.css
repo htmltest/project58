@@ -324,7 +324,7 @@ html {
     display: block
 }
 
-body.index .layout-wrapper {
+body.main .layout-wrapper {
     padding-top: 0
 }
 
@@ -911,7 +911,7 @@ label.error {
     background: #fff;
 }
 
-.index .header {
+.main .header {
     background: transparent;
 }
 
